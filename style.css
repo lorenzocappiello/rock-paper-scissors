@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;800&display=swap');
+
+html {
+    background: rgb(131,58,180);
+    background: radial-gradient(circle, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.hero {
+    margin-top: -6px;
+}
+
+.game-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.8rem; 
+    line-height: 60px; 
+    color: white; 
+    text-transform: uppercase;
+}
+
+.game-button-section {
+    margin-bottom: 48px; 
+}
+
+.game-button, .game-computer, .result {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 1.9rem; 
+    color: white; 
+}
+
+.result-section {
+    margin-top: 48px; 
+    margin-bottom: 48px; 
+    color: white; 
+}
+
+/* Game */ 
+
+button {
+    background: #fff;
+    border: 0;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    box-sizing: border-box;
+}
+
+.computer-choice {
+    border: 0;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    box-sizing: border-box;
+}
+
+svg {
+    height: 40px;
+    fill: black; 
+}
+
+.rock, .paper, .scissors {
+    fill: white; 
+}
+
+.computer-choice svg {
+    display: none;
+}
+
+.result {
+    margin-top: 20px;
+}
+
+@keyframes spin {
+    0%{transform:rotate(0deg);}
+    100%{transform:rotate(360deg);}
+}
+
+.computer-choice {
+    animation: spin 1s infinite linear;
+    transition: all .5s linear;
+}
+
+.computer-choice.stop-spinning {
+    animation: none;
+}
+
+/* Footer */ 
+
+.footer {
+    margin-top: -48px; 
+}
+
+.copyright {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 8px; 
+    color: white; 
+    text-align: center;
+}
+
+.gamespace-link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 8px; 
+    text-decoration: none;
+    color: white; 
+}
+
+@media screen and (min-width: 768px) {
+    .hero {
+        margin-top: -42px; 
+    }
+    .game-title {
+        font-size: 96px; 
+        line-height: 72px; 
+    }
+    .game-button-section {
+        margin-top: -24px; 
+    }
+    .footer {
+        margin-top: -48px; 
+    }
+}
+
+@media screen and (min-width: 1140px) {
+    .hero {
+        margin-top: -63px; 
+    }
+    .game-title {
+        font-size: 108px; 
+        line-height: 90px; 
+    }
+    .game-button-section {
+        margin-top: -48px; 
+    }
+    .game-computer-section {
+        margin-top: -24px; 
+    }
+    .result-section {
+        margin-top: -36px; 
+    }
+    .footer {
+        margin-top: -48px; 
+    }
+    button, .computer-choice {
+        width: 120px;
+        height: 120px;
+    }
+    svg {
+        height: 80px;
+        fill: black; 
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .hero {
+        margin-top: -72px; 
+    }
+    .game-title {
+        font-size: 124px; 
+        line-height: 96px; 
+    }
+    .game-button-section {
+        margin-top: -72px; 
+    }
+    .game-computer-section {
+        margin-top: -24px; 
+    }
+    .result-section {
+        margin-top: -36px; 
+    }
+    .footer {
+        margin-top: -48px; 
+    }
+    button, .computer-choice {
+        width: 120px;
+        height: 120px;
+    }
+    .computer-choice {
+        margin-top: -24px;
+    }
+    svg {
+        height: 80px;
+        fill: black; 
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .hero {
+        margin-top: -72px; 
+    }
+    .game-title {
+        font-size: 124px; 
+        line-height: 96px; 
+    }
+    .game-button-section {
+        margin-top: -48px; 
+    }
+    .game-computer-section {
+        margin-top: -24px; 
+    }
+    .result-section {
+        margin-top: -36px; 
+    }
+    .footer {
+        margin-top: 84px; 
+    }
+    button, .computer-choice {
+        width: 120px;
+        height: 120px;
+    }
+    svg {
+        height: 80px;
+        fill: black; 
+        text-align: center;
+    }
+}
