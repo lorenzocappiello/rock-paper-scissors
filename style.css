@@ -26,6 +26,13 @@ body {
     text-transform: uppercase;
 }
 
+@media screen and (max-width: 428px) {
+  .game-title {
+    font-size: 96px; 
+    line-height: 80px; 
+  }
+}
+
 .game-button-section {
     margin-bottom: 48px; 
 }
